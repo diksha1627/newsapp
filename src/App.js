@@ -8,7 +8,7 @@ function App() {
 
   const [data , setData] = useState({});
   useEffect(() => {
-    axios.get("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=f550c60e9d9349e5a8c33b16b65c4bfd").then(response => {
+    axios.get("http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=f550c60e9d9349e5a8c33b16b65c4bfd").then(response => {
 
     setData(response.data)
 
